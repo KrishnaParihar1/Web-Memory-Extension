@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Web Memory</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <input id="q" type="search" placeholder="What are you trying to remember?" autocomplete="off" autofocus aria-label="Search saved clips">
+    <button id="save" class="primary" title="Select text on the page first, then open this popup and click here">Save selection</button>
+  </header>
+  <nav id="tags" aria-label="Filter by tag"></nav>
+  <main id="list"></main>
+  <div id="status" role="status" aria-live="polite"></div>
+  <footer>
+    <span id="count"></span>
+    <span class="spacer"></span>
+    <label class="switch" title="Get a notification with one older clip each day">
+      <input type="checkbox" id="resurface"> Resurface daily
+    </label>
+    <button id="export" class="link">Export</button>
+    <button id="import" class="link">Import</button>
+    <input type="file" id="file" accept="application/json" hidden>
+  </footer>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

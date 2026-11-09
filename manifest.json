@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Web Memory",
+  "version": "0.2.0",
+  "description": "Save the exact text you found online, with its source. Search it later in plain words.",
+  "permissions": ["storage", "unlimitedStorage", "contextMenus", "activeTab", "scripting", "alarms", "notifications"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Web Memory",
+    "default_icon": { "16": "icons/icon16.png", "48": "icons/icon48.png" }
+  },
+  "commands": {
+    "save-selection": {
+      "suggested_key": { "default": "Alt+Shift+S", "mac": "Alt+Shift+S" },
+      "description": "Save selected text to Web Memory"
+    }
+  },
+  "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
+}
