@@ -2,11 +2,13 @@
 
 Save the exact text you found online, with its source. Search it later in plain words. Everything stays on your device.
 
+<!-- ![Web Memory popup](docs/popup.png) -->
+
 ## Install (Chrome, Edge, Brave)
 
-1. Unzip this folder.
+1. Download the latest zip from [Releases](https://github.com/KrishnaParihar1/Web-Memory-Extension/releases) and unzip it.
 2. Open `chrome://extensions` (`brave://extensions` in Brave) and turn on Developer mode.
-3. Click Load unpacked and pick the `web-memory` folder.
+3. Click Load unpacked and select the unzipped folder, the one that contains `manifest.json`.
 
 ## Use
 
